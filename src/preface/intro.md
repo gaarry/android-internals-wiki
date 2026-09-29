@@ -34,3 +34,7 @@ related_chapters: ["1.1", "2.1", "3.1"]
 正文的确定性结论最高覆盖 Android 17（API 37）。核对平台机制时使用 Android 开源项目（Android Open Source Project，AOSP）的固定源码标签 `android-17.0.0_r1`；核对内核机制时使用 Android Common Kernel（Android 公共内核）的固定源码标签 `android17-6.18-2026-06_r6`。固定标签让不同读者可以回到同一份代码核对结论。低版本源码只用于解释版本演进或兼容边界，Android 18 及后续版本不进入本书的确定性结论。
 
 完整的 AOSP 开发经验不是阅读前提。具备 Android 应用开发、系统服务或性能测试经验即可从实际问题开始；涉及 Java 框架层（Framework）、C/C++ 原生层（Native）与 Linux 内核（Kernel）的章节会先交代对象和调用关系，再给出源码入口（类、方法或文件路径）、观测方法与版本边界。
+
+---
+
+> 内容来源：本书基于 [Gracker/android-internals-wiki](https://github.com/Gracker/android-internals-wiki)，原作作者为高建武（Gracker）。本站由 gaarry 独立维护；本 fork 调整了站点域名、仓库入口和前言目录，不代表原作者背书。原作按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 发布；转载时请保留原作者、原作链接和许可链接，并标明后续修改。完整声明见本仓库 [LICENSE](https://github.com/gaarry/android-internals-wiki/blob/master/LICENSE)。

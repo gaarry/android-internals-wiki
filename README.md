@@ -6,7 +6,7 @@
 
 面向有经验的 Android 开发者和系统工程师。覆盖 App、Framework、Native 与 Kernel，当前基准是 Android 17 / API 37，源码核对标签是 AOSP `android-17.0.0_r1`。
 
-完整目录见 [`src/SUMMARY.md`](src/SUMMARY.md)。网页版在 [wiki.androidperformance.com](https://wiki.androidperformance.com/)，和博客 [androidperformance.com](https://www.androidperformance.com/) 分开。站点用 [Catppuccin](https://github.com/catppuccin/mdBook) 主题，右上角可换 Latte（浅色）、Frappé、Macchiato、Mocha（深色）。每天编一次。每周会把正文编成 EPUB，放在 [GitHub Releases](https://github.com/Gracker/android-internals-wiki/releases)。
+完整目录见 [`src/SUMMARY.md`](src/SUMMARY.md)。网页版在 [wiki.garyimpl.com](https://wiki.garyimpl.com/)，和博客 [androidperformance.com](https://www.androidperformance.com/) 分开。站点用 [Catppuccin](https://github.com/catppuccin/mdBook) 主题，右上角可换 Latte（浅色）、Frappé、Macchiato、Mocha（深色）。每天编一次。每周会把正文编成 EPUB，放在 [GitHub Releases](https://github.com/gaarry/android-internals-wiki/releases)。
 
 <!-- android-performance-ecosystem:start -->
 ## Android 性能分析生态
@@ -21,7 +21,7 @@
 | 分析 | [SmartPerfetto](https://github.com/Gracker/SmartPerfetto) | 通过 AI 辅助 Web UI、CLI、报告、会话、对比和证据工作流分析 Trace。 | [GitHub](https://github.com/Gracker/SmartPerfetto) |
 | Agent 分析 | [Perfetto Skills](https://github.com/Gracker/Perfetto-Skills) | 为 Agent 提供可移植的 Android、Linux、Chromium Perfetto 分析 Skill，并通过固定版本流程同步选定资产。 | [GitHub](https://github.com/Gracker/Perfetto-Skills) |
 | 学习 | [Android Performance Blog](https://github.com/Gracker/Gracker.github.io) | 通过文章、系统原理和案例复盘讲解 Perfetto 与 Systrace 分析。 | [AndroidPerformance.com](https://www.androidperformance.com/) · [GitHub](https://github.com/Gracker/Gracker.github.io) |
-| 系统知识 | Android Internal Wiki | 处于 alpha 阶段的 Android 系统知识库，覆盖 App、Framework、Native 与 Kernel 机制。 | [GitHub](https://github.com/Gracker/android-internals-wiki) |
+| 系统知识 | Android Internal Wiki | 处于 alpha 阶段的 Android 系统知识库，覆盖 App、Framework、Native 与 Kernel 机制。 | [GitHub](https://github.com/gaarry/android-internals-wiki) |
 | 复现 | [Trace for Blog (SystraceForBlog)](https://github.com/Gracker/SystraceForBlog) | 提供文章使用的 Perfetto、Systrace 及相关案例文件，支持动手复现。 | [GitHub](https://github.com/Gracker/SystraceForBlog) |
 <!-- android-performance-ecosystem:end -->
 
@@ -97,19 +97,6 @@
 - [附录 F：推荐阅读](src/appendix/recommended-reading.md)
 - [附录 G：Android 性能学习路线](src/appendix/android-performance-learning-path.md)
 
-## 支持这个项目
-
-提 Issue、提 PR，或给仓库点 Star，都直接有用。
-
-也可以打赏，用来给家里的猫豆豆买猫粮。码在 [支持这个项目](src/preface/support.md)，支付宝和微信都可以。
-
-<table>
-<tr>
-<td align="center"><img src="src/preface/images/alipay.png" alt="支付宝赞赏码" width="200" height="200"><br>支付宝</td>
-<td align="center"><img src="src/preface/images/wechat-pay.png" alt="微信支付码" width="200" height="200"><br>微信</td>
-</tr>
-</table>
-
 ## 贡献
 
 欢迎开 Issue 或 Pull Request。错别字、失效链接、事实勘误可以直接 PR；新章节或大段重写请先开 Issue。
@@ -118,36 +105,4 @@
 
 正文由 AI 辅助整理结构与初稿，技术判断和定稿由人工完成。
 
-## License
-
-正文和电子书可以公开阅读。社区使用按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)：非商业转载和改编须署名，并保留相同许可。
-
-出版、上架销售、收费培训、把正文打进付费产品，需要版权人高建武（Gracker）的书面授权。说明见 [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)，书里的摘要见 [许可说明](src/preface/license.md)。
-
-SmartPerfetto 使用的公开 Knowledge Pack 收录 26 章正文。目录页、导航 README 和生成产物不算正文。构建规则见 [`knowledge-pack/policy.yaml`](knowledge-pack/policy.yaml)，再分发边界见 [`KNOWLEDGE-PACK-LICENSE.md`](KNOWLEDGE-PACK-LICENSE.md)。
-
-> 注：本书引用的 AOSP 源码遵循 Apache License 2.0。引用他人内容均已标注原始出处，仅用于技术说明目的。
-
-## 关于作者
-
-高建武。网上多用 Gracker，也有人叫高爷。人在成都。
-
-长期在手机厂商做 Android 系统开发优化，以及应用侧的快、省、稳。主要看 Framework、APM 和系统优化；App 开发和 Linux 也接触。业余时间写在 [androidperformance.com](https://www.androidperformance.com/)，现在还在更新的系列：
-
-- **Systrace**：用 Systrace 把系统运行机制和性能问题放到同一条时间线上
-- **Perfetto**：接替 Systrace 的分析工具，多了 SQL 和更完整的数据面
-- **性能分析和实战**：卡顿、ANR、内存、功耗怎么采、怎么看
-- **快省稳**：流畅性、响应速度、内存、稳定性、功耗
-
-这本书把这些题目收进同一套 Android 17 目录。更完整的介绍见书里的 [作者简介](src/preface/about-author.md)。
-
-### 社交网络
-
-- 博客：[androidperformance.com](https://www.androidperformance.com/)
-- 知乎：[zhihu.com/people/gracker](https://www.zhihu.com/people/gracker)
-- 即刻：[okjk.co/pJbjFa](https://okjk.co/pJbjFa)
-- 微信公众号：AndroidPerformance
-- 掘金：[juejin.cn/user/1816846860560749](https://juejin.cn/user/1816846860560749)
-- Bilibili：[space.bilibili.com/213254842](https://space.bilibili.com/213254842)
-- 微信：553000664（加好友请备注 Blog）
-- 邮箱：dreamtale.jg@gmail.com
+> 内容来源：本项目基于 [Gracker/android-internals-wiki](https://github.com/Gracker/android-internals-wiki)，原作作者为高建武（Gracker）。本 fork 调整了站点域名、仓库入口和前言目录，不代表原作者背书。原作按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 发布；完整声明见本仓库 [`LICENSE`](https://github.com/gaarry/android-internals-wiki/blob/master/LICENSE)。

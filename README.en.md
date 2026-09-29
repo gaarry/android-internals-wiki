@@ -13,7 +13,7 @@ practical tooling.
 
 The canonical Chinese body has five parts and 26 chapters, plus a preface and
 appendices. `src/SUMMARY.md` is the mdBook table of contents. The HTML edition
-is at [wiki.androidperformance.com](https://wiki.androidperformance.com/),
+is at [wiki.garyimpl.com](https://wiki.garyimpl.com/),
 separate from the blog at [androidperformance.com](https://www.androidperformance.com/).
 It uses the [Catppuccin](https://github.com/catppuccin/mdBook) theme (Latte,
 Frappé, Macchiato, Mocha) and rebuilds once a day.
@@ -31,49 +31,20 @@ The [Android Performance Ecosystem](https://github.com/Gracker/android-performan
 | Analyze | [SmartPerfetto](https://github.com/Gracker/SmartPerfetto) | Investigate traces with an AI-assisted Web UI, CLI, reports, sessions, comparisons, and evidence workflow. | [GitHub](https://github.com/Gracker/SmartPerfetto) |
 | Agent analysis | [Perfetto Skills](https://github.com/Gracker/Perfetto-Skills) | Give agents a portable Perfetto analysis Skill for Android, Linux, and Chromium, with selected assets synchronized through pinned workflows. | [GitHub](https://github.com/Gracker/Perfetto-Skills) |
 | Learn | [Android Performance Blog](https://github.com/Gracker/Gracker.github.io) | Teach Perfetto and Systrace analysis through articles, system explanations, and case studies. | [AndroidPerformance.com](https://www.androidperformance.com/) · [GitHub](https://github.com/Gracker/Gracker.github.io) |
-| System knowledge | Android Internal Wiki | An alpha knowledge base for Android mechanisms from App to Framework, Native, and Kernel. | [GitHub](https://github.com/Gracker/android-internals-wiki) |
+| System knowledge | Android Internal Wiki | An alpha knowledge base for Android mechanisms from App to Framework, Native, and Kernel. | [GitHub](https://github.com/gaarry/android-internals-wiki) |
 | Reproduce | [Trace for Blog (SystraceForBlog)](https://github.com/Gracker/SystraceForBlog) | Provide the Perfetto, Systrace, and related case files used by articles for hands-on reproduction. | [GitHub](https://github.com/Gracker/SystraceForBlog) |
 <!-- android-performance-ecosystem:end -->
 
 ## Full documentation
 
-Read the [Chinese README](README.md) for the chapter map, reading order,
-licensing, and contribution workflow. Weekly EPUB snapshots are published on
-[GitHub Releases](https://github.com/Gracker/android-internals-wiki/releases).
+Read the [Chinese README](README.md) for the chapter map, reading order, and
+contribution workflow. Weekly EPUB snapshots are published on
+[GitHub Releases](https://github.com/gaarry/android-internals-wiki/releases).
 
-## Support
-
-Issues and pull requests help most. Tips (Alipay / WeChat) are in [src/preface/support.md](src/preface/support.md). Community contributions follow [CONTRIBUTING.md](CONTRIBUTING.md). A scheduled job triages open issues/PRs twice a day; it does not merge.
-
-## Knowledge Pack and licensing
+## Knowledge Pack
 
 The versioned, read-only SmartPerfetto Knowledge Pack includes the 26 chapter
 bodies. Navigation README/SUMMARY files and generated reports are not article
 bodies. Build rules are in [`knowledge-pack/policy.yaml`](knowledge-pack/policy.yaml).
 
-Community reading and non-commercial reuse are under
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-Publishing a book, selling the text, paid courses, or bundling the body into a
-paid product needs a written grant from Gao Jianwu (Gracker).
-See [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md).
-
-Possession of a Pack does not itself grant commercial-use rights. See
-[`KNOWLEDGE-PACK-LICENSE.md`](KNOWLEDGE-PACK-LICENSE.md) for the exact
-SmartPerfetto redistribution boundary.
-
-## About the author
-
-Gao Jianwu. Online as Gracker. Chengdu.
-
-Works on Android system performance and on app smoothness, startup, stability, and power, mostly around Framework, APM, and platform internals. Also does app development and Linux. Writes at [androidperformance.com](https://www.androidperformance.com/). Series still being updated: Systrace, Perfetto, performance case studies, and 快省稳 (smooth / efficient / stable). Full bio (Chinese): [src/preface/about-author.md](src/preface/about-author.md).
-
-### Social
-
-- Blog: [androidperformance.com](https://www.androidperformance.com/)
-- Zhihu: [zhihu.com/people/gracker](https://www.zhihu.com/people/gracker)
-- Jike: [okjk.co/pJbjFa](https://okjk.co/pJbjFa)
-- WeChat official account: AndroidPerformance
-- Juejin: [juejin.cn/user/1816846860560749](https://juejin.cn/user/1816846860560749)
-- Bilibili: [space.bilibili.com/213254842](https://space.bilibili.com/213254842)
-- WeChat: 553000664 (add with note Blog)
-- Email: dreamtale.jg@gmail.com
+> Content attribution: This fork is based on [Gracker/android-internals-wiki](https://github.com/Gracker/android-internals-wiki), originally authored by Gao Jianwu (Gracker). This fork customizes the site domain, repository links, and preface navigation and is not endorsed by the original author. The original text is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); see this repository's [LICENSE](https://github.com/gaarry/android-internals-wiki/blob/master/LICENSE) for the full notice.

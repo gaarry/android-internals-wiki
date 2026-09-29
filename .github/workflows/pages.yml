@@ -33,6 +33,7 @@ jobs:
           mkdir -p src_filtered/src
           cp -R src/. src_filtered/src/
           python3 tools/filter_frontmatter.py src_filtered/src
+          rm -f src_filtered/src/preface/images/alipay.png src_filtered/src/preface/images/wechat-pay.png
           cp book.toml src_filtered/
           cp -R theme src_filtered/
           cp -R static src_filtered/
